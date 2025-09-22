@@ -1,0 +1,58 @@
+apiVersion: v2
+name: elk8-dev
+description: A fast, resource-efficient ELK Stack derived from the official charts at https://helm.elastic.co, intended for development purposes.
+type: application
+version: 0.1.0
+appVersion: "8.5.1"
+home: https://github.com/fadedreams/elk8-dev
+# icon: https://www.elastic.co/assets/blte782c7c7a0e5923b/elastic-logo-cluster.svg
+sources:
+  - https://github.com/fadedreams/elk8-dev
+keywords:
+  - elasticsearch
+  - kibana
+  - logstash
+  - filebeat
+  - elk
+  - logging
+  - development
+maintainers:
+  - name: fadedreams
+    email: fadedreams7@gmail.com
+dependencies:
+  - name: elasticsearch
+    version: "8.5.1"
+    repository: "https://helm.elastic.co"
+    condition: elasticsearch.enabled
+  - name: kibana
+    version: "8.5.1"
+    repository: "https://helm.elastic.co"
+    condition: kibana.enabled
+  - name: logstash
+    version: "8.5.1"
+    repository: "https://helm.elastic.co"
+    condition: logstash.enabled
+  - name: filebeat
+    version: "8.5.1"
+    repository: "https://helm.elastic.co"
+    condition: filebeat.enabled
+annotations:
+  artifacthub.io/license: MIT
+  artifacthub.io/links: |
+    - name: source
+      url: https://github.com/fadedreams/elk8-dev
+    - name: support
+      url: https://github.com/fadedreams/elk8-dev/issues
+  artifacthub.io/maintainers: |
+    - name: fadedreams
+      email: fadedreams7@gmail.com
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/images: |
+    - name: elasticsearch
+      image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
+    - name: kibana
+      image: docker.elastic.co/kibana/kibana:8.5.1
+    - name: logstash
+      image: docker.elastic.co/logstash/logstash:8.5.1
+    - name: filebeat
+      image: docker.elastic.co/beats/filebeat:8.5.1
