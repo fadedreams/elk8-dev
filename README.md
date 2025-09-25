@@ -9,6 +9,9 @@ Helm 3.x installed.
 ## Method 1: Install via GitHub Repository (Recommended)
 Clone the repository and install individual components using the official Elastic Helm charts with custom values files.
 ```
+helm repo add elastic https://helm.elastic.co
+helm repo update
+
 # Add Elastic Helm repository
 # Clone the repository
 git clone https://github.com/fadedreams/elk8-dev.git
