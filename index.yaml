@@ -23,7 +23,7 @@ entries:
           email: fadedreams7@gmail.com
     apiVersion: v2
     appVersion: 8.5.1
-    created: "2026-10-28T00:34:27.542685535-04:00"
+    created: "2026-10-28T00:36:00.888951094-04:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -63,66 +63,4 @@ entries:
     urls:
     - https://fadedreams.github.io/elk8-dev/elk8-dev-0.1.1.tgz
     version: 0.1.1
-  - annotations:
-      artifacthub.io/category: monitoring-logging
-      artifacthub.io/images: |
-        - name: elasticsearch
-          image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
-        - name: kibana
-          image: docker.elastic.co/kibana/kibana:8.5.1
-        - name: logstash
-          image: docker.elastic.co/logstash/logstash:8.5.1
-        - name: filebeat
-          image: docker.elastic.co/beats/filebeat:8.5.1
-      artifacthub.io/license: MIT
-      artifacthub.io/links: |
-        - name: source
-          url: https://github.com/fadedreams/elk8-dev
-        - name: support
-          url: https://github.com/fadedreams/elk8-dev/issues
-      artifacthub.io/maintainers: |
-        - name: fadedreams
-          email: fadedreams7@gmail.com
-    apiVersion: v2
-    appVersion: 8.5.1
-    created: "2026-10-28T00:34:27.504590291-04:00"
-    dependencies:
-    - condition: elasticsearch.enabled
-      name: elasticsearch
-      repository: https://helm.elastic.co
-      version: 8.5.1
-    - condition: kibana.enabled
-      name: kibana
-      repository: https://helm.elastic.co
-      version: 8.5.1
-    - condition: logstash.enabled
-      name: logstash
-      repository: https://helm.elastic.co
-      version: 8.5.1
-    - condition: filebeat.enabled
-      name: filebeat
-      repository: https://helm.elastic.co
-      version: 8.5.1
-    description: A fast, resource-efficient ELK Stack derived from the official charts
-      at https://helm.elastic.co, intended for development purposes.
-    digest: a760b4ad5c1722f067eea409dd14b90ed1019ae5ba98bffe280988bb9e7004b3
-    home: https://github.com/fadedreams/elk8-dev
-    keywords:
-    - elasticsearch
-    - kibana
-    - logstash
-    - filebeat
-    - elk
-    - logging
-    - development
-    maintainers:
-    - email: fadedreams7@gmail.com
-      name: fadedreams
-    name: elk8-dev
-    sources:
-    - https://github.com/fadedreams/elk8-dev
-    type: application
-    urls:
-    - https://fadedreams.github.io/elk8-dev/elk8-dev-0.1.0.tgz
-    version: 0.1.0
-generated: "2026-10-28T00:34:27.494304761-04:00"
+generated: "2026-10-28T00:36:00.871603409-04:00"
