@@ -1,9 +1,3 @@
-commit 005e02da3b99d97bdc65ae359edaf41ba6a2f865
-Author: fadedreams <fadedreams7@gmail.com>
-Date:   Wed Oct 28 00:43:36 2026 -0400
-
-    elk8-dev 0.1.1: stable ES password, idempotent Kibana hook, resource tuning, docs
-
 diff --git a/charts/elasticsearch/.helmignore b/charts/elasticsearch/.helmignore
 new file mode 100644
 index 0000000..e12c0b4
