@@ -1,2 +1,5 @@
 *.lock
 .git/
+*.tgz
+index.yaml
+artifacthub-repo.yml
